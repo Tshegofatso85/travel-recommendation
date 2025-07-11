@@ -152,3 +152,40 @@
     .social-icons a:hover {
       opacity: 1;
     }
+
+    .search-results {
+        display: none;
+        position: absolute;
+        top: 20px;      /* Adjust to place under your search bar */
+        right: 20px;    /* Adjust as needed */
+        width: 300px;   /* Set width if necessary */
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        z-index: 10;
+        max-height: 600px;
+        overflow-y: auto;
+      }
+
+    .each-result {
+        background: white;
+        color: black;
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .each-result img {
+        width: 100%;
+    }
+
+    .each-result h2 {
+        font-size: 17px;
+        font-weight: bolder;
+    }
+
+    .each-result p {
+        font-size: 10px;
+        font-weight: lighter;
+    }
