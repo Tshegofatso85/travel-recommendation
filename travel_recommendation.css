@@ -63,8 +63,8 @@
     }
 
 
-    /* Background image styling */
-    .home-container {
+    .home-container,
+    .about-container {
       background-image: url('https://cdn.adventure-life.com/14/35/93/nice_1/1300x820.webp');
       background-size: cover;
       background-position: center;
@@ -77,7 +77,8 @@
     }
 
     /* Overlay for darkening background (optional) */
-    .home-container::before {
+    .home-container::before,
+    .about-container::before {
       content: "";
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
