@@ -1,0 +1,153 @@
+    /* Reset and basic styling */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #333;
+      padding: 10px 20px;
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .search-section {
+      display: flex;
+      gap: 5px;
+    }
+
+    .search-section input[type="text"] {
+      padding: 5px;
+    }
+
+    .search-section button {
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    .logo img {
+        width: 60px;
+    }
+
+    .logo a {
+        color: white;
+        font-style: italic;
+        text-decoration: none;
+        
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .logo:hover {
+        transform: scale(1.1);
+    }
+
+
+    /* Background image styling */
+    .home-container {
+      background-image: url('https://cdn.adventure-life.com/14/35/93/nice_1/1300x820.webp');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-left: 60px;
+      position: relative;
+      box-sizing: border-box;
+    }
+
+    /* Overlay for darkening background (optional) */
+    .home-container::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+
+    /* Content box */
+    .home-content {
+      position: relative;
+      max-width: 500px;
+      z-index: 1;
+      margin-left: 50px;
+    }
+
+    /* Large heading */
+    .home-content h1 {
+      font-size: 4rem;
+      font-weight: 900;
+      line-height: 1.1;
+      margin: 0 0 20px 0;
+      text-transform: uppercase;
+    }
+
+    /* Paragraph text */
+    .home-content p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      margin-bottom: 30px;
+      opacity: 0.9;
+      max-width: 400px;
+    }
+
+    /* Book Now button */
+    .book-btn {
+      background-color: #0a6f6f;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-transform: uppercase;
+      font-size: 1rem;
+    }
+    .book-btn:hover {
+      background-color: #095353;
+    }
+
+    /* Social icons container */
+    .social-icons {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      z-index: 1;
+    }
+
+    /* Individual social icon style */
+    .social-icons a {
+      color: white;
+      font-size: 24px;
+      text-decoration: none;
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+    }
+    .social-icons a:hover {
+      opacity: 1;
+    }
